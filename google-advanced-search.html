@@ -2,11 +2,70 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link rel="stylesheet" href="./styles/index.css">
     </head>
     <body>
-        <h1>Advanced Search Google</h1>
-        <p>
-            <a href="./index.html">Search</a>
-        </p>
+        <header>
+            <div class="header-container bg-advanced-search">
+                <div class="logo-container">
+                    <span class="logo"></span>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item">
+                            <a class="link" href="./index.html">Google Search</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="main-search">
+            <div class="main-search__app-search">
+                <div class="main-search__app-bar">
+                    <h3 class="main-search__app-bar-title">Advanced Search</h3>
+                </div>
+                <div class="main-search__app-form">
+                    <form action="https://google.com/search">
+                        <div class="form-control-group">
+                            <label class="search-box-lbl-text">Find pages with...</label>
+                            <label class="search-box-title"><strong>To do this in the search box.</strong></label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-group__lbl"> all these words:</label>
+                            <input class="form-group__input-control" type="text">
+                            <span class="form-group__more-info">Type the important words: <span>tri-colour</span> rat terrier</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-group__lbl">this exact word or phrase: </label>
+                            <input class="form-group__input-control" type="text">
+                            <span class="form-group__more-info">Put exact words in quotes:<span>"rat terrier"</span></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-group__lbl">any of these words:</label>
+                            <input class="form-group__input-control" type="text">
+                            <span class="form-group__more-info">Type OR between all the words you want: <span>miniature OR standard</span></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-group__lbl">none of these words:</label>
+                            <input class="form-group__input-control" type="text">
+                            <span class="form-group__more-info">Put a minus sign just before words that you don't want:
+<span>-rodent, -"Jack Russell"</span> 
+                            </span>
+                        </div>
+                        <div class="btn-actions">
+                            <input type="submit" class="btn-search" value="Advanced Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span class="country">
+                France
+            </span>
+        </footer>
     </body>
 </html>
